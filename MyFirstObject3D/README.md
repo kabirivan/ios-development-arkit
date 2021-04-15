@@ -4,4 +4,4 @@
 
 > Arkit es un framework que nos ayuda a crear realidad aumentada en nuestras aplicaciones iOS. ARKit utiliza una técnica llamada Odometría Visual Inercial (VIO) la cual combina  información de los sensores de movimiento junto con la cámara del dispositivo.
 
-![GitHub Repository](imagesReadme/logo.png "Arkit"){ width=50% }
+[<img src="imagesReadme/logo.png" width="400"/>](imagesReadme/logo.png)
