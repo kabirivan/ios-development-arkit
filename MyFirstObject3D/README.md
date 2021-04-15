@@ -11,3 +11,18 @@ Para este ejemplo se ha escogido la tecnología SceneKit la cual es enfocada par
 
 
 [<img src="imagesReadme/plane.jpeg" height="400"/>](imagesReadme/plane.jpeg)
+
+
+El archivo para entender lo que esta realizando este codigo es el siguiente **ViewController.swift**
+
+
+Primero se debe definir la clase *ViewController* como:
+
+> `ARSCNViewDelegate :`
+> `class ViewController: UIViewController, ARSCNViewDelegate { } `
+
+
+Ahora se necesita crear una escena para mostrar una imagen virtual. Para esto necesitas crear an *IBOutlet*. El nombre *IBOutlet* puede ser cualquiera que usted desea. Luego la plantilla de la aplicacion de realidad virtual *IBOutlet sceneView* nombra a un objeto *ARSCNView*
+
+> ` @IBOutlet var sceneView: ARSCNView!`
+
