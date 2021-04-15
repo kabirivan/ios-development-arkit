@@ -47,3 +47,10 @@ Por otro lado el archivo *texture.png* define la imagen que se aplica en la imag
 
 * Una vez definida la imagen 3D en el nombre de la variable **scene**, finalmente se debe colocar esta imagen 3D en la vista de la escena real: 
 >`sceneView.scene = scene`
+
+Por otro lado, en el método *viewWillAppear*, usted necesita añadir dos líneas adicionales. La primera línea activa el seguimiento del dispositivo iOS para medir la posición y el ángulo en el que apunta la cámara.
+>`let configuration = ARWorldTrackingConfiguration()`
+
+La segunda línea ejecuta la sesión real de realidad aumentada
+>`sceneView.session.run(configuration)`
+
