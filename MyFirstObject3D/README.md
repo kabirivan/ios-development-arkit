@@ -26,3 +26,24 @@ Ahora se necesita crear una escena para mostrar una imagen virtual. Para esto ne
 
 > ` @IBOutlet var sceneView: ARSCNView!`
 
+
+Dentro del methodo *viewDidLoad* se define cuatro elementos. 
+
+* Definir *view's delegate*:
+> `sceneView.delegate = self`
+
+* En este caso se va a mostrar estadísticas en la pantalla. El siguiente comando muestra el número de frames por segundo (fps)
+>`sceneView.showsStatistics = true`
+
+* Definir la imagen real que se va a mostrar en la realidad aumentada. Es importante tener en cuenta que la escena está definida por el *IBOutlet* la cual toma el nombre de *sceneView*
+>`let scene = SCNScene(named: "art.scnassets/ship.scn")!`
+
+Si usted da click en la carpeta *art.scnassets* en **Xcode** se puede ver dos archivos gráficos llamados *ship.scn* y *texture.png*
+
+[<img src="imagesReadme/ship.png" height="400"/>](imagesReadme/ship.png)
+
+El archivo *ship.scn* (define la forma 3D del avión) representa una imagen de SceneKit. Tambien se puede utilizar otro tipo de archivos como COLLADA (Actividad de diseño COLL), que tiene la extensión de archivo *.dae.*.
+Por otro lado el archivo *texture.png* define la imagen que se aplica en la imagen *ship.scn* para mostrar diferentes colores y patrones.
+
+* Una vez definida la imagen 3D en el nombre de la variable **scene**, finalmente se debe colocar esta imagen 3D en la vista de la escena real: 
+>`sceneView.scene = scene`
