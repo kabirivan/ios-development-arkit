@@ -49,6 +49,7 @@
 		49BB77992628E16B005B389A /* MyFirstObject3DUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MyFirstObject3DUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49BB779D2628E16B005B389A /* MyFirstObject3DUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyFirstObject3DUITests.swift; sourceTree = "<group>"; };
 		49BB779F2628E16B005B389A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49BB77AE2628E1F1005B389A /* README.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +80,7 @@
 		49BB776F2628E16A005B389A = {
 			isa = PBXGroup;
 			children = (
+				49BB77AE2628E1F1005B389A /* README.md */,
 				49BB777A2628E16A005B389A /* MyFirstObject3D */,
 				49BB77912628E16B005B389A /* MyFirstObject3DTests */,
 				49BB779C2628E16B005B389A /* MyFirstObject3DUITests */,
