@@ -23,8 +23,8 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         sceneView.showsStatistics = true
         
         // Create a new scene
-        let scene = SCNScene(named: "art.scnassets/ship.scn")!
-        
+        let scene = SCNScene(named: "art.scnassets/game/GameScene.scn")!
+
         // Set the scene to the view
         sceneView.scene = scene
     }
@@ -33,7 +33,7 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         super.viewWillAppear(animated)
         
         // Create a session configuration
-        let configuration = ARWorldTrackingConfiguration()
+        let configuration = ARImageTrackingConfiguration()
 
         // Run the view's session
         sceneView.session.run(configuration)
