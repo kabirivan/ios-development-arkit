@@ -1,8 +1,8 @@
 //
 //  AppDelegate.swift
-//  ImageTracking
+//  ImageRecognitionWithTransformation
 //
-//  Created by Xavier Aguas on 4/15/21.
+//  Created by Xavier Aguas on 4/18/21.
 //
 
 import UIKit

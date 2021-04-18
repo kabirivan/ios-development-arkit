@@ -1,14 +1,14 @@
 //
-//  ImageTrackingTests.swift
-//  ImageTrackingTests
+//  ImageRecognitionWithTransformationTests.swift
+//  ImageRecognitionWithTransformationTests
 //
-//  Created by Xavier Aguas on 4/15/21.
+//  Created by Xavier Aguas on 4/18/21.
 //
 
 import XCTest
-@testable import ImageTracking
+@testable import ImageRecognitionWithTransformation
 
-class ImageTrackingTests: XCTestCase {
+class ImageRecognitionWithTransformationTests: XCTestCase {
 
     override func setUpWithError() throws {
         // Put setup code here. This method is called before the invocation of each test method in the class.

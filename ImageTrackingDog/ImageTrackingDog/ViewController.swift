@@ -69,9 +69,9 @@ class ViewController: UIViewController, ARSCNViewDelegate {
             let planeNode = SCNNode(geometry: plane)
             planeNode.eulerAngles.x = -.pi/2
             
-            let dogScene = SCNScene(named: "art.scnassets/dog/ares.scn")!
+            let dogScene = SCNScene(named: "art.scnassets/heart/ares.scn")!
                         let dogNode = dogScene.rootNode.childNodes.first!
-                        dogNode.position.z = 0.05
+                        dogNode.position.z = 0.1
                         
                         planeNode.addChildNode(dogNode)
         
