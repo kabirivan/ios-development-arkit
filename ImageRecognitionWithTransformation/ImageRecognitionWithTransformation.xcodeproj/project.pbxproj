@@ -15,6 +15,7 @@
 		49B5E9C8262CF3E600E67FD9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 49B5E9C6262CF3E600E67FD9 /* LaunchScreen.storyboard */; };
 		49B5E9D3262CF3E600E67FD9 /* ImageRecognitionWithTransformationTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5E9D2262CF3E600E67FD9 /* ImageRecognitionWithTransformationTests.swift */; };
 		49B5E9DE262CF3E600E67FD9 /* ImageRecognitionWithTransformationUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5E9DD262CF3E600E67FD9 /* ImageRecognitionWithTransformationUITests.swift */; };
+		49B5E9EF262D10C200E67FD9 /* AnimationInfo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49B5E9EE262D10C200E67FD9 /* AnimationInfo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +50,7 @@
 		49B5E9D9262CF3E600E67FD9 /* ImageRecognitionWithTransformationUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ImageRecognitionWithTransformationUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		49B5E9DD262CF3E600E67FD9 /* ImageRecognitionWithTransformationUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImageRecognitionWithTransformationUITests.swift; sourceTree = "<group>"; };
 		49B5E9DF262CF3E600E67FD9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		49B5E9EE262D10C200E67FD9 /* AnimationInfo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AnimationInfo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -106,6 +108,7 @@
 				49B5E9C4262CF3E600E67FD9 /* Assets.xcassets */,
 				49B5E9C6262CF3E600E67FD9 /* LaunchScreen.storyboard */,
 				49B5E9C9262CF3E600E67FD9 /* Info.plist */,
+				49B5E9EE262D10C200E67FD9 /* AnimationInfo.swift */,
 			);
 			path = ImageRecognitionWithTransformation;
 			sourceTree = "<group>";
@@ -259,6 +262,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				49B5E9EF262D10C200E67FD9 /* AnimationInfo.swift in Sources */,
 				49B5E9C0262CF3E500E67FD9 /* ViewController.swift in Sources */,
 				49B5E9BC262CF3E500E67FD9 /* AppDelegate.swift in Sources */,
 			);

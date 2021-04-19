@@ -1,7 +1,7 @@
 {
   "images" : [
     {
-      "filename" : "airplane.png",
+      "filename" : "tree.jpg",
       "idiom" : "universal"
     }
   ],
@@ -10,7 +10,6 @@
     "version" : 1
   },
   "properties" : {
-    "unit" : "centimeters",
-    "width" : 21
+    "width" : 0.25
   }
 }
