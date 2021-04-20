@@ -101,42 +101,6 @@ class ViewController: UIViewController, ARSCNViewDelegate {
         
     }
     
-    func renderer(_ renderer: SCNSceneRenderer, updateAtTime time: TimeInterval) {
-        guard let imageNode = imageNode, let planeNode = planeNode else {
-            return
-        }
-        
-        
-        
-        // 1. Unwrap animationInfo. Calculate animationInfo if it is nil.
-        guard let animationInfo = animationInfo else {
-            refreshAnimationVariables(startTime: time,
-                                      initialPosition: planeNode.simdWorldPosition,
-                                      finalPosition: imageNode.simdWorldPosition,
-                                      initialOrientation: planeNode.simdWorldOrientation,
-                                      finalOrientation: imageNode.simdWorldOrientation)
-            return
-        }
-        
-        // 2. Calculate new animationInfo if image position or orientation changed.
-        if !simd_equal(animationInfo.finalModelPosition, imageNode.simdWorldPosition) || animationInfo.finalModelOrientation != imageNode.simdWorldOrientation {
-            
-            refreshAnimationVariables(startTime: time,
-                                      initialPosition: planeNode.simdWorldPosition,
-                                      finalPosition: imageNode.simdWorldPosition,
-                                      initialOrientation: planeNode.simdWorldOrientation,
-                                      finalOrientation: imageNode.simdWorldOrientation)
-        }
-        
-        // 3. Calculate interpolation based on passedTime/totalTime ratio.
-        let passedTime = time - animationInfo.startTime
-        var t = min(Float(passedTime/animationInfo.duration), 1)
-        // Applying curve function to time parameter to achieve "ease out" timing
-        t = sin(t * .pi * 0.5)
-        
-        
-        
-    }
-    
+   
     
 }
