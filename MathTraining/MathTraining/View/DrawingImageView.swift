@@ -78,9 +78,46 @@ class DrawingImageView: UIImageView {
     
     @objc func numberDrawnOnScreen(){
         
+        guard let image = self.image else { return }
         
+        let drawRect = CGRect(x: 0, y:0, width: 28, height: 28)
+        let format = UIGraphicsImageRendererFormat()
+        format.scale = 1
         
+        let renderer = UIGraphicsImageRenderer(bounds: drawRect , format: format)
         
+        let imageWithWhiteBackground = renderer.image {ctx in
+            
+            UIColor.white.setFill()
+            ctx.fill(bounds)
+            image.draw(in: drawRect)
+        }
+        
+        // Convert an UIImage from CG to CI
+        let ciImage = CIImage(cgImage: imageWithWhiteBackground.cgImage!)
+        
+        // Invert colors
+        
+        if let  filter = CIFilter(name: "CIColorInvert"){
+            // Define CIImage to be filtered
+            filter.setValue(ciImage, forKey: kCIInputImageKey)
+            
+            // Create context to apply filter
+            let context = CIContext(options: nil)
+            
+            if let outputImage = filter.outputImage{
+                // Try converting CGImage
+                if let imageRef = context.createCGImage(outputImage, from: ciImage.extent){
+                    let resultImage = UIImage(cgImage: imageRef)
+                    
+                    self.delegate?.numberDrawn(resultImage)
+                }
+                
+                
+            }
+            
+            
+        }
     }
 
 }
